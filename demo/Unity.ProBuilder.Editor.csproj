@@ -11,10 +11,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C132594A-928C-86DF-54BB-28617E4DB357}</ProjectGuid>
+    <ProjectGuid>{EC0E2367-94AC-D3B1-A660-137B8C31A4AF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Unity.ProBuilder.Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -47,11 +47,170 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\Peripheral.cs" />
-     <Compile Include="Assets\Script\AxisRigidbodyAttractor.cs" />
-     <Compile Include="Assets\Script\RigidbodyBalanceKeeper.cs" />
-     <Compile Include="Assets\Script\RigidbodyController.cs" />
-     <Compile Include="Assets\Script\HandController.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\TextureRotateTool.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\MergeFaces.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\RepairActions.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\ExtrudeFaces.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EditorToolbar.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\UnwrapParametersEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\BezierSplineEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Interaction\ToggleSelectBackFaces.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\VertexColorPalette.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\UVRenderOptions.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Editors\OpenVertexPositionEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Selection\SelectFaceRing.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\MenuOption.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\InsertEdgeLoop.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\UndoUtility.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\Extrude.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Selection\SelectEdgeRing.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\IconUtility.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\Pref.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\BooleanEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\TextureScaleTool.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\ProBuilderEditorShortcuts.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Object\MergeObjects.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\TriangulateFaces.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\Model.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\PositionScaleTool.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\ExtrudeEdges.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\UVEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Selection\SelectLoop.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\PreferencesUpdater.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\SelectionUtility.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EditorUtility.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\FlipFaceNormals.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\ObjExporter.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EditorMaterialUtility.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Object\SetCollider.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\SmoothGroupEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Selection\SelectFaceLoop.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\IconImporter.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\PreferencesInternal.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Selection\SelectVertexColor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\MenuItems.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\BridgeEdges.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\MenuAction.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EditorMeshUtility.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\DimensionsEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Export\ExportAsset.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Selection\GrowSelection.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\IHasPreferences.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EditorToolbarMenuItems.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\VersionValidator.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\DestroyListener.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Interaction\ToggleDragSelectionMode.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\TooltipContent.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EditorHandleUtility.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\SetPivotToSelection.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\SmartSubdivide.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\FileUtility.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\PositionRotateTool.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\SmartConnect.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Editors\OpenShapeEditorMenuItem.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\ProBuilderSnapSettings.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\pb_ObjectArray.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EntityVisibility.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Object\SetTrigger.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Editors\OpenSmoothingEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\CollapseVertices.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\ProBuilderMeshEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Export\ExportPly.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\DeleteFaces.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Interaction\ToggleHandlePivotPoint.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Object\FlipObjectNormals.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\DuplicateFaces.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\LicenseEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Selection\SelectSmoothingGroup.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EditorToolbarLoader.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EditorSceneViewPicker.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Editors\OpenUVEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Object\MirrorObjects.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Export\ExportStlAscii.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\Version.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\ShapeEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\ShortcutManager.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\MeshAndElementSelection.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EditorEnum.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Interaction\ToggleDragRectMode.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\ConnectVertices.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\PositionTool.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\ToolbarGroup.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EditorStyles.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\Experimental.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Object\ProBuilderize.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\VertexManipulationTool.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\ReflectionUtility.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\LightmapUVEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\LogEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Editors\OpenMaterialEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Interaction\ToggleHandleOrientation.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\TextureTool.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\ProBuilderSettings.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\FillHole.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\ProBuilderSettingsProvider.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\Lightmapping.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Export\ExportObj.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Selection\SelectHole.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\FlipFaceEdge.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\OffsetElements.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Editors\OpenShapeEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Selection\SelectRing.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\PositionMoveTool.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\ProBuilderMenuActionAttribute.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EditorHandleDrawing.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\PlyExporter.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EntityEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Object\SubdivideObject.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\SubdivideEdges.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\UnityScenePostProcessor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EditorGUIUtility.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\VertexPositionEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\ScriptingSymbolManager.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\HierarchyListener.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EditorGUILayout.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\HandleGUI.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\AssemblyInfo.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Export\Export.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\DetachFaces.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Editors\NewPolyShape.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\VertexManipulationToolSettings.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Object\ConformObjectNormals.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\TooltipEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\MenuActionStyles.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\ConfigurableWindow.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\BevelEdges.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Object\FreezeTransform.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Selection\SelectMaterial.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Selection\SelectEdgeLoop.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Selection\ShrinkSelection.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Editors\NewBezierShape.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\ConnectEdges.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\ProBuilderEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EntityUtility.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\TextureMoveTool.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\MaterialPalette.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Editors\OpenVertexColorEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Object\CenterPivot.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\PreferenceDictionaryEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\SceneDragAndDropListener.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\MaterialEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\PolyShapeEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\ProGridsInterface.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\MeshSelection.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\AutoUVEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\SubdivideFaces.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\ConformFaceNormals.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Editors\OpenLightmapUVEditor.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\StripProBuilderScripts.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Object\TriangulateObject.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\SplitVertices.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Object\GenerateUV2.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Export\ExportStlBinary.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\MenuActionShortcutAttribute.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\EditorCore\EditorHandleDrawingScopes.cs" />
+     <Compile Include="Packages\com.unity.probuilder\Editor\MenuActions\Geometry\WeldVertices.cs" />
+     <None Include="Packages\com.unity.probuilder\Editor\Unity.ProBuilder.Editor.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.19f1c2/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -276,6 +435,33 @@
  </Reference>
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.19f1c2/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.19f1c2/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.19f1c2/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.19f1c2/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>/Applications/Unity/Hub/Editor/2020.3.19f1c2/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Plastic.Newtonsoft.Json">
+ <HintPath>/Users/chenzhanming/Documents/GitHub/Haptic-Glove/demo/Library/PackageCache/com.unity.collab-proxy@1.9.0/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Plastic.Antlr3.Runtime">
+ <HintPath>/Users/chenzhanming/Documents/GitHub/Haptic-Glove/demo/Library/PackageCache/com.unity.collab-proxy@1.9.0/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="log4netPlastic">
+ <HintPath>/Users/chenzhanming/Documents/GitHub/Haptic-Glove/demo/Library/PackageCache/com.unity.collab-proxy@1.9.0/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="unityplastic">
+ <HintPath>/Users/chenzhanming/Documents/GitHub/Haptic-Glove/demo/Library/PackageCache/com.unity.collab-proxy@1.9.0/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Users/chenzhanming/Documents/GitHub/Haptic-Glove/demo/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.19f1c2/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -627,9 +813,9 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{4C982CC5-3D15-135F-A9BD-274281FBF959}</Project>
-      <Name>Unity.VSCode.Editor</Name>
+    <ProjectReference Include="Unity.ProBuilder.csproj">
+      <Project>{BD689E18-A479-9FB1-71FE-1AF61D4FB112}</Project>
+      <Name>Unity.ProBuilder</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.ProBuilder.AssetIdRemapUtility.csproj">
@@ -637,44 +823,19 @@
       <Name>Unity.ProBuilder.AssetIdRemapUtility</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{7E5C83A1-D705-350E-CEC2-A0A6005385C4}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
+    <ProjectReference Include="Unity.ProBuilder.Stl.csproj">
+      <Project>{D64FAC13-F1B8-8EA3-B7E5-FBBD49A55FB6}</Project>
+      <Name>Unity.ProBuilder.Stl</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{35F78E46-EA85-07B3-B979-D31518BA57AE}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
+    <ProjectReference Include="Unity.Settings.Editor.csproj">
+      <Project>{D7C9F7CB-65E1-FB3D-2699-7AD6FD54C473}</Project>
+      <Name>Unity.Settings.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="Unity.ProBuilder.AddOns.Editor.csproj">
-      <Project>{C9115C84-D30C-7EA6-3796-6B1B0743D8BB}</Project>
-      <Name>Unity.ProBuilder.AddOns.Editor</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{82739DC9-5FC6-4C2E-F43B-2AA6E7903A8F}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{7AA72D0B-690C-EA73-78F6-0C8E8DD2D0F6}</Project>
-      <Name>Unity.Timeline</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{D69CA969-2132-F528-EBB4-DAA6FF1207A9}</Project>
-      <Name>Unity.TextMeshPro</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ProBuilder.csproj">
-      <Project>{BD689E18-A479-9FB1-71FE-1AF61D4FB112}</Project>
-      <Name>Unity.ProBuilder</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ProBuilder.Editor.csproj">
-      <Project>{EC0E2367-94AC-D3B1-A660-137B8C31A4AF}</Project>
-      <Name>Unity.ProBuilder.Editor</Name>
+    <ProjectReference Include="Unity.ProBuilder.Csg.csproj">
+      <Project>{882E2316-8136-8FB0-05D1-BCEA7580B1AE}</Project>
+      <Name>Unity.ProBuilder.Csg</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
@@ -682,19 +843,19 @@
       <Name>UnityEditor.UI</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{95E89E3A-6B22-0FF3-BEBF-AD4E2FC5BE5D}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{770C5155-C471-A65A-99D1-8C876DF41435}</Project>
-      <Name>Unity.Rider.Editor</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{C22B4725-3B04-13FB-05FE-592D89702E9F}</Project>
       <Name>UnityEngine.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{47163B77-607F-073C-B094-DBA2F3471969}</Project>
+      <Name>UnityEngine.TestRunner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{AFD3F033-0880-51A2-5E8D-8018997935F1}</Project>
+      <Name>UnityEditor.TestRunner</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

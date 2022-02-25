@@ -164,7 +164,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.DefaultCompany.
+    Standalone: com.Virineya-and-C.HanoiTowerDemo
     iPhone: com.Virineya-and-C.HanoiTowerDemo
   buildNumber:
     Standalone: 0
